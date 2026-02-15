@@ -36,8 +36,6 @@ I followed this specific workflow to catch errors early and ensure the final rep
 
 • The "Super Report": I didn't want to hand over five different tables, so I used UNION ALL to merge different KPIs into one clean, stakeholder-ready view.
 
-• Advanced Ranking: Instead of just using TOP N, I implemented RANK() and ROW_NUMBER() within subqueries. This allowed for much more flexible reporting on top-performing products.
-
 • Maintaining Data Integrity: I relied heavily on LEFT JOINs to ensure I wasn't losing any sales data when connecting the Fact and Dimension tables.
 
 
