@@ -24,9 +24,9 @@ FROM INFORMATION_SCHEMA.COLUMNS
 /*
 STEP 2
 DIMENSIONS EXPLORATION: 
-(a) EXPLORE ALL COUNTRIES WE HAVE OUR CUSTOMERS IN
 */
 
+-- (a) EXPLORE ALL COUNTRIES WE HAVE OUR CUSTOMERS IN
 SELECT DISTINCT country
 FROM gold.dim_customers
 	ORDER BY country;
@@ -64,9 +64,6 @@ FROM gold.dim_customers;
 /*
 STEP 4 MEASURES EXPLORATION:
 */
-
-SELECT * FROM gold.fact_sales;
-SELECT * FROM gold.dim_products;
 
 -- (a) FIND TOTAL SALES
 SELECT SUM(sales_amount) AS total_sales
@@ -251,4 +248,5 @@ GROUP BY  s.customer_key, c.first_name, c.last_name
 ORDER BY orders_placed ASC;
 
 --ANY FEEDBACKS, SUGGESTIONS, ADVICES ARE WELCOMED 
+
 -- Email : anshukumar65524@gmail.com
